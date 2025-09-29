@@ -1,0 +1,108 @@
+/* Darken bad food when good food is hovered */
+.menu-list .menu-item:first-child:hover ~ .menu-item {
+    filter: brightness(0.7);
+    transition: filter 0.5s;
+}
+.menu-list .menu-item {
+    transition: filter 0.5s;
+}
+body 
+{   
+    
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #fff8f0;
+    color: #333; 
+    
+}
+
+header 
+{
+
+    background: #ff7043;
+    color: white;
+    padding: 2rem 1rem;
+    text-align: center;
+    
+}
+
+nav 
+{ 
+    background: #ffe0b2;
+    display: flex;
+    justify-content: center;
+    gap: 2rem; padding: 1rem 0;
+    
+}
+
+nav a 
+{
+
+     color: #ff7043;
+    text-decoration: none;
+     font-weight: bold;
+
+}
+
+nav a:hover 
+{
+
+     text-decoration: underline; 
+    
+}
+section 
+{ 
+
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px #ff704344; 
+        
+}
+h2 
+{ 
+
+    color: #ff7043;
+
+}
+.menu-list 
+{ 
+
+    display: flex;
+     flex-wrap: wrap;
+      gap: 1.5rem;
+
+}
+.menu-item 
+{ 
+    flex: 1 1 200px;
+    background: #fff3e0;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 1px 4px #ff704322; 
+    
+}
+.menu-item h3 
+{ 
+    
+    margin-top: 0; 
+
+}
+footer 
+{ 
+    text-align: center;
+    padding: 1rem; background: #ff7043;
+    color: white;
+    margin-top: 2rem;
+
+}
+@media (max-width: 600px) 
+{ 
+    
+    .menu-list { flex-direction: column; }
+    section { padding: 1rem; } 
+    
+}
