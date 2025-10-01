@@ -1,11 +1,4 @@
-/* Darken bad food when good food is hovered */
-.menu-list .menu-item:first-child:hover ~ .menu-item {
-    filter: brightness(0.7);
-    transition: filter 0.5s;
-}
-.menu-list .menu-item {
-    transition: filter 0.5s;
-}
+
 body 
 {   
     
